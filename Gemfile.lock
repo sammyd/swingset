@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/sammyd/xcplayground.git
+  revision: 71ef2bcb6b820553e4503e9a5ec8b1749a2a82ef
+  specs:
+    xcplayground (0.0.1)
+      builder (~> 3.2.2)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -7,6 +14,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    builder (3.2.2)
     coderay (1.1.0)
     colored (1.2)
     i18n (0.7.0)
@@ -21,7 +29,7 @@ GEM
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    xcodeproj (0.23.0)
+    xcodeproj (0.23.1)
       activesupport (>= 3)
       colored (~> 1.2)
 
@@ -31,3 +39,4 @@ PLATFORMS
 DEPENDENCIES
   pry
   xcodeproj
+  xcplayground!
