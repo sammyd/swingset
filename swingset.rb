@@ -3,6 +3,7 @@ require 'bundler/setup'
 
 # require your gems as usual
 require 'xcodeproj'
+require 'xcplayground'
 
 # Create a new project
 proj = Xcodeproj::Project.new("~/Desktop/FrameworkProvider.xcodeproj")
@@ -39,14 +40,14 @@ ws = Xcodeproj::Workspace.new([])
 
 ws << proj.path
 
+# Create a playground
+playground = Xcplayground::Playground.new('~/Desktop/WithFrameworks.playground', :osx)
+playground.save
+
+# Add the playground to the workspace
+ws << playground.path
+
 # Save the workspace
 ws.save_as("/Users/sam/Desktop/PlaygroundWithFrameworks.xcworkspace")
 
-# Add a playground to the new work space
-
-
-# Save it all
-
-
-# Open the workspace
 
