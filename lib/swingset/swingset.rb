@@ -44,7 +44,8 @@ module SwingSet
     end
 
     def write_workspace(path, name, contents)
-      ws = Xcodeproj::Workspace.new(contents)
+      ws = Xcodeproj::Workspace.new([])
+      contents.each { |c| ws << c }
       ws.save_as(File.join(path, name + '.xcworkspace'))
     end
   end

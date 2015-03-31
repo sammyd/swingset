@@ -10,4 +10,4 @@ end
 
 require 'swingset'
 
-SwingSet::Command.go
+SwingSet::Command.start(ARGV)

@@ -4,7 +4,7 @@ module SwingSet
   class FrameworkDirectory
     def initialize(swingset, framework_path)
       @swingset = swingset
-      add_frameworks_from_path(path)
+      add_frameworks_from_path(framework_path)
     end
 
     def self.carthage_frameworks(swingset, platform = :ios)
@@ -32,3 +32,4 @@ module SwingSet
       end
     end
   end
+end

@@ -17,5 +17,6 @@ Gem::Specification.new do |s|
   s.executables   = %{swingset}
   s.require_paths = %{lib}
 
-  s.add_runtime_dependency 'xcodeproj', '~> 0.23.1' 
+  s.add_runtime_dependency 'xcodeproj', '~> 0.23.1'
+  s.add_runtime_dependency 'thor', '~> 0.19.1'
 end

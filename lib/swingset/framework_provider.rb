@@ -36,7 +36,7 @@ module SwingSet
       target.name = 'FrameworkProvider'
       target.product_name = 'FrameworkProvider'
       target.build_configuration_list = Xcodeproj::Project::ProjectHelper
-        .configuration_list(proj, platform, nil, nil, :swift)
+        .configuration_list(project, platform, nil, nil, :swift)
       target
     end
 
